@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu lateral dinamico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+
+            <img src="LOGO.png" width="120" alt="LOGO">
+            <ul>
+                <center>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="MISIÓN.html">MISIÓN</a></li>
+                    <li><a href="VISIÓN.html">VISIÓN</a></li>
+                    <li><a href="PRODUCTOS.html">PRODUCTOS</a></li>
+                    <li><a href="CATEGORÍAS.html">CATEGORÍAS</a></li>
+                    <li><a href="PROMOCIONES.html">PROMOCIONES</a></li>
+                    <li><a href="MARCAS.html">MARCAS</a></li>
+                    <li><a href="GALERÍA.html">GALERÍA</a></li>
+                    <li><a href="CONTACTOS.html">CONTACTOS</a></li>
+                </center>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>PROMOCIONES</h2>
+                
+            
+        <br>
+        <br>
+        <center><img src="imagenes/maxresdefault.jpg" width="600" alt="imagen17"></center>
+        <br>
+        <br>
+        <center><img src="imagenes/Sears-3x2-zapateria-111019-01.jpg" width="600" alt="imagen17"></center>
+        <br>
+        <br>
+    
+            <center><button>Mostrar Menu</button></center>
+        </div>
+        
+
+    </section>
+
+    <!-- JS jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        // Mostrar Sidebar
+        $("button").on('click', function() {
+            $(".container").toggleClass("show");
+        });
+
+        $(".side-hide").on('click', function() {
+            $(".container").toggleClass("show");
+        })
+
+    </script>
+
+</body>
+
+</html>
